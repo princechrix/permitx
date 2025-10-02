@@ -1,5 +1,5 @@
 {
-  "name": "permitx",
+  "name": "permit-x",
   "version": "1.0.0",
   "type": "module",
   "description": "A lightweight React permission management library with RBAC and permission-based access control",
@@ -46,16 +46,18 @@
     "@types/node": "^24.6.2",
     "@types/react": "^19.2.0",
     "@vitejs/plugin-react": "^4.2.0",
+    "dotenv": "^8.2.0",
     "eslint": "^9.36.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-react": "^7.37.5",
     "jsdom": "^27.0.0",
     "next": "^14.0.0",
+    "node-fetch": "^3.3.2",
     "prettier": "^3.6.2",
     "tsup": "^8.5.0",
     "typescript": "^5.9.3",
     "vitest": "^3.2.4"
-  }, 
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/princechrix/permitx.git"
