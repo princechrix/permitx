@@ -283,7 +283,7 @@ test('renders content for admin role', () => {
 
 ## License
 
-MIT © [Your Name]
+MIT © [Prince Chrix]
 
 ## Changelog
 
