@@ -1,5 +1,5 @@
 {
-  "name": "permitx",
+  "name": "permit-x",
   "version": "1.0.0",
   "type": "module",
   "description": "A lightweight React permission management library with RBAC and permission-based access control",

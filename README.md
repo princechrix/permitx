@@ -15,7 +15,7 @@ A lightweight React permission management library with role-based access control
 ## Installation
 
 ```bash
-npm install permitx
+npm install permit-x
 ```
 
 ## Quick Start
@@ -25,7 +25,7 @@ npm install permitx
 Wrap your app with the `PermissionProvider`:
 
 ```tsx
-import { PermissionProvider } from 'permitx';
+import { PermissionProvider } from 'permit-x';
 
 function App() {
   const userResolver = () => ({
@@ -44,7 +44,7 @@ function App() {
 ### 2. Use Permission Hook
 
 ```tsx
-import { usePermission } from 'permitx';
+import { usePermission } from 'permit-x';
 
 function MyComponent() {
   const { user, hasRole, hasPermission, loading } = usePermission();
@@ -64,7 +64,7 @@ function MyComponent() {
 ### 3. Conditional Rendering Components
 
 ```tsx
-import { IfRole, IfPermission } from 'permitx';
+import { IfRole, IfPermission } from 'permit-x';
 
 function Dashboard() {
   return (
@@ -147,7 +147,7 @@ interface IfPermissionProps {
 Next.js helper for server-side route protection.
 
 ```tsx
-import { getServerSidePropsGuard } from 'permitx';
+import { getServerSidePropsGuard } from 'permit-x';
 
 export const getServerSideProps = getServerSidePropsGuard(
   (context) => {
@@ -228,7 +228,7 @@ function ComplexComponent() {
 
 ```tsx
 // pages/admin.tsx
-import { getServerSidePropsGuard } from 'permitx';
+import { getServerSidePropsGuard } from 'permit-x';
 
 export const getServerSideProps = getServerSidePropsGuard(
   async (context) => {
@@ -251,7 +251,7 @@ export default function AdminPage() {
 
 ```tsx
 import { render, screen } from '@testing-library/react';
-import { PermissionProvider } from 'permitx';
+import { PermissionProvider } from 'permit-x';
 
 const createWrapper = (resolver) => {
   return ({ children }) => (
