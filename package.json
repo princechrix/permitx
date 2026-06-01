@@ -17,8 +17,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts",
-    "dev": "tsup src/index.ts --watch --format esm,cjs --dts",
+    "build": "node init && tsup src/index.ts --format cjs,esm --dts",
+    "dev": "node init && tsup src/index.ts --watch --format esm,cjs --dts",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "lint": "eslint src tests --ext .ts,.tsx",
